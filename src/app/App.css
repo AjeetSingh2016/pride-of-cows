@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Black text for readability */
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .summary{
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-form {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-thumbnail {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .product-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .product-price {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+  }
+  
+  .quantity-controls button {
+    background-color: #333; /* Black for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #555;
+  }
+  
+  .subtotal, .tax, .total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .checkout-button {
+    background-color: #333; /* Black button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #555;
+  }
+  
+  .coupon-input {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 70%;
+
+  }
+  
+  .coupon-button {
+    margin-bottom: 5%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .coupon-button:hover {
+    background-color: #555;
+  }
+  
+  @media (min-width: 768px) {
+    .main {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  .form{
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+  }
+.form-info-section{
+    width: 100%;
+    /* background-color: #007bff; */
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.form-button-section{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color: #007bff; */
+}
+
+.subscription-checkboxes {
+    margin-top: 20px;
+  }
+  
+  .subscription-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .subscription-checkbox input {
+    margin-right: 10px;
+  }
+  
+
+  button:disabled, input:disabled {
+    cursor: not-allowed;
+  }
+  
